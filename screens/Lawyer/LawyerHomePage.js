@@ -13,7 +13,7 @@ export default function LawyerHomePage(){
     
     return(
         <>
-        <View className="w-[100%] h-[100%]  bg-[#c3e0f1]" >
+        <View className="w-[100%] h-[100%]  bg-[#EAECF9]" >
          <LinearGradient colors={['#7e6bec', '#c3e0f1']} className="rounded-b-[30px] h-[25%]">
          <View className="p-2  h-[20%] ">
              <View className="flex-row justify-between mt-2 ">

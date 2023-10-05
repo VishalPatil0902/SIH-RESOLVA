@@ -6,11 +6,14 @@ import FindLawyer from './screens/Lawyer/FindLawyer';
 
 export default function App() {
   return (
+    <>
       <SafeAreaWrapper>
-        <LawyerHomePage/>
+        {/* <LawyerHomePage/> */}
         {/* <Home/> */}
-        {/* <FindLawyer/> */}
+        <FindLawyer/>
       </SafeAreaWrapper>
+    </>
+
 
   );
 }

@@ -29,8 +29,8 @@ export default function Home(){
 
                     <View className="mx-4 flex-row justify-between flex-wrap">
                     <TouchableOpacity style={{width:wp(44),height:wp(65)}} className="flex justify-end relative p-4 py-6 space-y-2 mb-5 bg-black text-black">
-              <Text>HEELO</Text>
-        </TouchableOpacity>
+                        <Text>HEELO</Text>
+                    </TouchableOpacity>
                     </View>
         </>
 
