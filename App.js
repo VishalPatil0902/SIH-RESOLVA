@@ -10,7 +10,7 @@ export default function App() {
     <>
       <SafeAreaWrapper>
         {/* <HomePage/>
-        {/* <LawyerHomePage/> */} */}
+        {/* <LawyerHomePage/> */} 
         {/* <Home/> */}
         <FindLawyer/>
       </SafeAreaWrapper>
