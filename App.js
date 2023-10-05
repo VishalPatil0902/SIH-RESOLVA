@@ -4,15 +4,17 @@ import LawyerHomePage from './screens/Lawyer/LawyerHomePage';
 import {LinearGradient} from 'expo-linear-gradient';
 import FindLawyer from './screens/Lawyer/FindLawyer';
 import HomePage from './screens/Homepage/Homepage';
+import ChatbotUI from './screens/Chatbot';
 
 export default function App() {
   return (
     <>
       <SafeAreaWrapper>
-        {/* <HomePage/>
-        {/* <LawyerHomePage/> */} 
+        {/* <HomePage/> */}
+        <LawyerHomePage/> 
         {/* <Home/> */}
-        <FindLawyer/>
+        {/* <FindLawyer/> */}
+        {/* <ChatbotUI/> */}
       </SafeAreaWrapper>
     </>
 
