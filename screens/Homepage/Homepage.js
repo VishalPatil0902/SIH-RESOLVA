@@ -3,10 +3,12 @@ import { View, Text, StyleSheet, TouchableOpacity, Image, ImageBackground } from
 import {Platform} from 'react-native'
 
 const HomePage = () => {
+
     const [isCard1Pressed, setcard1press] = useState(false);
     const [isCard2Pressed, setcard2press] = useState(false);
     const [isCard3Pressed, setcard3press] = useState(false);
     const [isCard4Pressed, setcard4press] = useState(false);
+    
     const handlecard1press = () => {
     setcard1press(!isCard1Pressed);
     };
