@@ -1,4 +1,4 @@
-import {TouchableOpacity,Text, Image,View} from 'react-native';
+import { TouchableOpacity, Text, Image ,View} from "react-native";
 
 export default function Cards({item}){
     return(

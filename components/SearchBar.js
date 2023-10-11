@@ -1,5 +1,17 @@
-import {View,Text, ScrollView, TextInput, TouchableOpacity, FlatList} from 'react-native';
-import {AdjustmentsHorizontalIcon,BellAlertIcon,MagnifyingGlassIcon,FunnelIcon} from 'react-native-heroicons/solid'
+import {
+  View,
+  Text,
+  ScrollView,
+  TextInput,
+  TouchableOpacity,
+  FlatList,
+} from "react-native";
+import {
+  AdjustmentsHorizontalIcon,
+  BellAlertIcon,
+  MagnifyingGlassIcon,
+  FunnelIcon,
+} from "react-native-heroicons/solid";
 
 const SearchBar = () => {
   return (
@@ -12,9 +24,16 @@ const SearchBar = () => {
             </View>
             <TouchableOpacity><View className="bg-[#FF7754] p-2 mt-4 mr-2 rounded-lg"><FunnelIcon color="white" size={20}/></View></TouchableOpacity>
           </View>
+        </TouchableOpacity>
+        <TextInput placeholder="Search Lawyer... " className="w-[100%]" />
+      </View>
+      <TouchableOpacity>
+        <View className="bg-[#FF7754] p-2 mt-4 mr-2 rounded-lg">
+          <FunnelIcon color="white" size={20} />
+        </View>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
-  )
-}
-
-export default SearchBar
-
+export default SearchBar;
