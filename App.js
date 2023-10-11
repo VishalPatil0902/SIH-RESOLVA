@@ -5,16 +5,22 @@ import {LinearGradient} from 'expo-linear-gradient';
 import FindLawyer from './screens/Lawyer/FindLawyer';
 import HomePage from './screens/Homepage/Homepage';
 import ChatbotUI from './screens/Chatbot';
-
+import LawyerDetails from './screens/Lawyer/LawyerDetails';
+import MyLawyer from './screens/Lawyer/MyLawyer';
+import Documents from './screens/Lawyer/Documents';
+import FindLawyercopy from './screens/Lawyer/FindLawyercopy';
 export default function App() {
   return (
     <>
-      <SafeAreaWrapper>
+      <SafeAreaWrapper >
         {/* <HomePage/> */}
-        <LawyerHomePage/> 
+        {/* <LawyerHomePage/>  */}
         {/* <Home/> */}
-        {/* <FindLawyer/> */}
+        {/* <FindLawyercopy/> */}
         {/* <ChatbotUI/> */}
+        {/* <LawyerDetails/> */}
+        {/* <MyLawyer/> */}
+        {/* <Documents/> */}
       </SafeAreaWrapper>
     </>
 

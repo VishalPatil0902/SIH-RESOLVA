@@ -2,10 +2,10 @@ import {View,Text, ScrollView} from "react-native";
 import {AdjustmentsHorizontalIcon,BellAlertIcon} from 'react-native-heroicons/solid'
 import Cards from "../../components/Cards";
 import {LinearGradient} from 'expo-linear-gradient';
-import Search2 from '../../Images/Search2.webp'
-import MyLawyer from '../../Images/MyLawyer.png'
-import documents from '../../Images/legaldocuments.png'
-import Appointments from '../../Images/HoldingPhone.webp'
+import Search2 from '../../Images/search.png'
+import MyLawyer from '../../Images/lawyer.png'
+import documents from '../../Images/agreement.png'
+import Appointments from '../../Images/appointment.png'
 
 
 
@@ -13,27 +13,33 @@ export default function LawyerHomePage(){
     
     return(
         <>
-        <View className="w-[100%] h-[100%]  bg-[#EAECF9]" >
-         <LinearGradient colors={['#7e6bec', '#c3e0f1']} className="rounded-b-[30px] h-[25%]">
+        <View className="w-[100%] h-[100%]  bg-[#EAECF9] rounded" >
+         <LinearGradient colors={['#ED765E', '#FEA858']} className="h-[25%] rounded-b-3xl">
          <View className="p-2  h-[20%] ">
              <View className="flex-row justify-between mt-2 ">
-                <AdjustmentsHorizontalIcon color="white" size={40}/>
-                <BellAlertIcon color="white" size={35}/>
+                <View className='bg-white rounded-lg'>
+                <AdjustmentsHorizontalIcon color="#ff7754" size={40}/>
+                </View>
+                <View className='bg-white rounded-lg p-1'>
+                <BellAlertIcon color="#ff7754" size={33}/>
+                </View>
              </View>
 
           </View>
-          <Text className="text-center text-3xl m-4 mt-12 font-bold text-[#ffffff]">Welcome,to Your Legal Universe</Text>
+            <View className='bg-white mt-20 rounded-3xl p-4 w-[80%] mx-auto ' style={{elevation:10,shadowColor:'orange'}}>
+            <Text className="text-center text-2xl font-bold text-gray-500" >Welcome To Your Legal Universe</Text>
+            </View>
 
           </LinearGradient>
                       {/* CARD OPTIONS  */}
                                 
-                     <View className="flex-row justify-around flex-wrap w-[100%] h-[100%]">
+                     <View className="flex-row justify-around flex-wrap w-[100%] h-[100%] rounded-t-3xl">
                         <Cards item={{ img:MyLawyer,title:"My Lawyer"}}/>
                         <Cards item={{ img:Search2,title:"Find Lawyer"}}/>
                         <Cards item={{ img:documents,title:"Documents"}}/>
                         <Cards item={{ img:Appointments,title:"Appointment"}}/>
                      </View>
-                     <View className="bg-black w-[100%] h-[10px] relative"></View>
+                     {/* <View className="bg-black w-[100%] h-[10px] relative"></View> */}
         </View>
 </>
 

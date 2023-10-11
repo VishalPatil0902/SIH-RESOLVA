@@ -23,6 +23,7 @@ const HomePage = () => {
     };
 
   return (
+    
     <ImageBackground
       source={require('../../assets/background2.jpg')}
       style={styles.background}>
