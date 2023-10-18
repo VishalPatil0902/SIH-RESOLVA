@@ -5,16 +5,16 @@ import img from '../../Images/key.png'
 import {LinearGradient} from 'expo-linear-gradient';
 
 
-const Documents = () => {
+const Documents = ({navigation}) => {
   return (
     <>    
-        <ScrollView className="" >
-        
+        <ScrollView className="bg-[#EAECF9]" >
            <View className='h-52'>
             
-              <View className="p-2  h-[100%] bg-[#201e5b] rounded-b-3xl " style={{elevation:10,shadowColor:'black'}}>
+           <LinearGradient colors={['#52e5e7', '#130cb7']} className="p-2  h-[100%] rounded-b-3xl " style={{elevation:10,shadowColor:'black'}}>
+                   <View className="p-2  h-[100%] rounded-b-3xl " >
                    <View className="flex-row justify-between mt-3 ml-2">
-                     <View className='bg-[#FF7754] rounded-lg p-1'><ChevronLeftIcon color="white" size={30}/></View>
+                   <TouchableOpacity className='bg-[#FF7754] rounded-lg p-1' onPress={() => navigation.navigate("LawyerHomePage")}><ChevronLeftIcon color="white" size={30}/></TouchableOpacity>                     
                    </View>
                    <LinearGradient colors={['#52e5e7', '#130cb7']} className=' w-[90%] h-[80%] mx-auto mt-12 rounded-3xl p-1' style={{elevation:20,shadowColor:'blue'}}>
                    <View  >
@@ -23,8 +23,10 @@ const Documents = () => {
                    </View>
                    </LinearGradient>
                 </View>
+                </LinearGradient>
 
            </View>
+
 
            <View className='mt-16 rounded-lg p-1 px-2' ><Text className='text-xl font-semibold text-green-800' style={{textShadowColor: 'green',textShadowOffset: {width: 1, height: 1},textShadowRadius: 0}}>GRANTED ACCESS TO LAWYER</Text></View>
             
