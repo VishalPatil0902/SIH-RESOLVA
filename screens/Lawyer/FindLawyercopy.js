@@ -4,11 +4,6 @@ import SearchBar from '../../components/SearchBar';
 import img from '../../Images/Lawyer.jpeg'
 import TopNav from '../../components/TopNav';
 import {LinearGradient} from 'expo-linear-gradient';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-
-const Tab = createBottomTabNavigator();
-
 
 export default function FindLawyercopy( { navigation } ){
      const data=[{name:'DARSHIT SHAH',img:'../../Images/Lawyer.jpeg',location:'Bangalore,Karnataka',experience:'8+ Years of Experience',languages:'Hindi,Tamil +2'}
@@ -22,8 +17,7 @@ export default function FindLawyercopy( { navigation } ){
 
    return(
         <>
-        
-        <ScrollView className="p-2 bg-[#EAECF9] h-[100%] " showsVerticalScrollIndicator={false}>
+        <ScrollView className="p-2 bg-[#EAECF9] h-[100%]" showsVerticalScrollIndicator={false}>
 
          {/* // */}
             <View className="p-2  h-12">
@@ -74,16 +68,14 @@ export default function FindLawyercopy( { navigation } ){
                        )
                })}
             
-            <View className='mb-10'></View>
+            <View className='mb-24'></View>
             
          </ScrollView>
-
-         
         
-
+               {/* <View className='bg-green-400 bg-opacity-5 z-10 w-full h-12 rounded-xl mx-2 mb-2 flex-row justify-around absolute  '>
+                  <HomeIcon size={15} color="#FF7754" />
+               </View> */}
         </>
 
      )
 }
-
-

@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { Platform } from "react-native";
 
-const HomePage = ({ navigation }) => {
+const HomePage = ({navigation}{ navigation }) => {
   const [isCard1Pressed, setcard1press] = useState(false);
   const [isCard2Pressed, setcard2press] = useState(false);
   const [isCard3Pressed, setcard3press] = useState(false);
@@ -29,13 +29,14 @@ const HomePage = ({ navigation }) => {
   };
 
   return (
+    
     <ImageBackground
       source={require("../../assets/background2.jpg")}
       style={styles.background}
     >
       <View style={styles.container}>
         <View style={styles.navbar}>
-          <TouchableOpacity>
+          <TouchableOpacity >
             <Image
               source={require("../../assets/multilingual.png")}
               style={styles.navImage}
@@ -50,7 +51,7 @@ const HomePage = ({ navigation }) => {
             style={
               isCard1Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard1press}
+            onPressIn={handlecard1press} onPress={() => navigation.navigate("LawyerPageNavigation")}
             onPress={() => navigation.navigate("LegalAid")}
           >
             <Image
@@ -76,7 +77,7 @@ const HomePage = ({ navigation }) => {
             style={
               isCard2Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard2press}
+            onPressIn={handlecard2press} onPress={() => navigation.navigate("Rehabilitation")}
             onPress={() => navigation.navigate("RehabilitationMain")}
           >
             <Image
@@ -102,7 +103,7 @@ const HomePage = ({ navigation }) => {
             style={
               isCard3Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard3press}
+            onPressIn={handlecard3press} onPress={() => navigation.navigate("CaseStatus")}
             onPress={() => navigation.navigate("Status")}
           >
             <Image
@@ -128,7 +129,7 @@ const HomePage = ({ navigation }) => {
             style={
               isCard4Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard4press}
+            onPressIn={handlecard4press} onPress={() => navigation.navigate("ChatBot")}
             onPress={() => navigation.navigate("ChatbotUI")}
           >
             <Image
