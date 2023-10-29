@@ -17,21 +17,19 @@ import Home from './screens/Homepage/Home';
 import Carousel from './components/Carousel';
 
 
-// Routing imports
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { NavigationContainer } from "@react-navigation/native";
-
 export default function App() {
+
+
   return (
-    <>
-      <SafeAreaWrapper>
-        {/* <HomePage/>
-        {/* <LawyerHomePage/> */}
-        {/* <Home/> */}
-        {/* {/* <FindLawyer/> */}
-        <RehabilitationMain /> */}
-        {/* <ChatbotUI/> */}
-      </SafeAreaWrapper>
-    </>
+    <SafeAreaWrapper>
+      <NavigationContainer className='bg-[#EAECF9]'>
+           {/* {route!=='ChatBot' && <BottomTab/>} */}
+           {/* <Notification/> */}
+           {/* <Profile/> */}
+           {/* <Settings/> */}
+           {/* <Help/> */}
+           <Carousel/>
+      </NavigationContainer>
+    </SafeAreaWrapper>
   );
 }
