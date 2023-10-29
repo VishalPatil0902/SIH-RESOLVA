@@ -60,7 +60,7 @@ const Documents = ({navigation}) => {
                <TouchableOpacity className='bg-white w-[40%] h-fit py-1 px-2d rounded-xl flex flex-row items-center justify-center border-1 border-green-500' style={{elevation:10,shadowColor:'green'}}><ChatBubbleLeftIcon color='green' className='items-center'/><Text className='ml-2 text-base text-green-400'>Message</Text></TouchableOpacity>
                <TouchableOpacity className='bg-white w-[40%] h-fit py-1 px-2d rounded-xl flex flex-row items-center justify-center border-1 border-blue-500' style={{elevation:10,shadowColor:'blue'}}><VideoCameraIcon color='blue' className='items-center'/><Text className='ml-2 text-base text-blue-400'>Video Call</Text></TouchableOpacity>
             </View>    */}
-          <View className='mt-5'></View>
+          <View className='mt-16'></View>
         </ScrollView>
   </>
 

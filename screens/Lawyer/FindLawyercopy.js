@@ -17,7 +17,7 @@ export default function FindLawyercopy( { navigation } ){
 
    return(
         <>
-        <ScrollView className="p-2 bg-[#EAECF9] h-[100%] " showsVerticalScrollIndicator={false}>
+        <ScrollView className="p-2 bg-[#EAECF9] h-[100%]" showsVerticalScrollIndicator={false}>
 
          {/* // */}
             <View className="p-2  h-12">
@@ -68,13 +68,13 @@ export default function FindLawyercopy( { navigation } ){
                        )
                })}
             
-            <View className='mb-10'></View>
+            <View className='mb-24'></View>
             
          </ScrollView>
         
-               <View className='bg-green-400 bg-opacity-5 z-10 w-full h-12 rounded-xl mx-2 mb-2 flex-row justify-around absolute  '>
+               {/* <View className='bg-green-400 bg-opacity-5 z-10 w-full h-12 rounded-xl mx-2 mb-2 flex-row justify-around absolute  '>
                   <HomeIcon size={15} color="#FF7754" />
-               </View>
+               </View> */}
         </>
 
      )

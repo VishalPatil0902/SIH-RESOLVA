@@ -49,14 +49,14 @@ export default function LawyerDetails({navigation}){
             </View>
 
             <View className='mt-2 mb-4 ' style={{elevation:5,shadowOffset:{width:6,height:6}}}>
-                <View className='bg-white mt-2 flex-row items-center  rounded-full py-1 justify-center mx-1' style={{elevation:5,shadowOffset:{width:100,height:100},shadowRadius:5}}><PhoneIcon size={15} color="#ff7754" /><Text className='text-sm ml-1 font-semibold text-gray-500' >9082049861</Text><Text className='font-bold items-center justify-center mx-1'>|</Text><EnvelopeIcon size={15} color="#ff7754" /><Text className='ml-1 font-semibold text-gray-500' adjustsFontSizeToFit={true} numberOfLines={1}>masterpranav07@gmail.com</Text></View>
+                <View className='bg-white mt-2 flex-row items-center  rounded-lg py-1 justify-center mx-1' style={{elevation:5,shadowOffset:{width:100,height:100},shadowRadius:5}}><PhoneIcon size={15} color="#ff7754" /><Text className='text-sm ml-1 font-semibold text-gray-500' >9082049861</Text><Text className='font-bold items-center justify-center mx-1'>|</Text><EnvelopeIcon size={15} color="#ff7754" /><Text className='ml-1 font-semibold text-gray-500' adjustsFontSizeToFit={true} numberOfLines={1}>masterpranav07@gmail.com</Text></View>
             </View>
             
             <View className='w-full flex items-center ' >
                 <LinearGradient   colors={['#fc6076', '#ff9a44', '#ef9d43', '#e75516']} start={{ x: 0, y: 0.5 }} end={{ x: 1, y: 0.5 }} className='w-[90%] mb-10 px-3 py-2 rounded-lg mt-2' style={{elevation:10,shadowColor:"black",shadowRadius:0}}><TouchableOpacity ><View><Text className='text-xl text-center font-semibold text-white'>REQUEST SERVICE</Text></View></TouchableOpacity></LinearGradient>
             </View>   
             
-
+             <View className='mb-16'></View>
         </ScrollView>
 
 

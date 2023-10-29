@@ -2,7 +2,7 @@ import React , {useState} from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ImageBackground } from 'react-native';
 import {Platform} from 'react-native'
 
-const HomePage = () => {
+const HomePage = ({navigation}) => {
 
     const [isCard1Pressed, setcard1press] = useState(false);
     const [isCard2Pressed, setcard2press] = useState(false);
@@ -29,7 +29,7 @@ const HomePage = () => {
       style={styles.background}>
     <View style={styles.container}>
     <View style={styles.navbar}>
-        <TouchableOpacity>
+        <TouchableOpacity >
         <Image source={require('../../assets/multilingual.png')} style={styles.navImage} />
         </TouchableOpacity>
       
@@ -37,22 +37,22 @@ const HomePage = () => {
       <View><Text style={styles.title}>Prisoner HomePage</Text></View>
       <View style={styles.cardContainer}>
 
-        <TouchableOpacity  style={isCard1Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard1press}>
+        <TouchableOpacity  style={isCard1Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard1press} onPress={() => navigation.navigate("LawyerPageNavigation")}>
         <Image source={isCard1Pressed ? require('../../assets/legalaid.png') : require('../../assets/legalaid-golden.png')} style={styles.cardImage} />
           <Text style={isCard1Pressed ? [styles.cardTitle, styles.cardtitlepress] : styles.cardTitle}>Legal Aid</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={isCard2Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard2press}>
+        <TouchableOpacity style={isCard2Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard2press} onPress={() => navigation.navigate("Rehabilitation")}>
         <Image source={isCard2Pressed ? require('../../assets/rehab.png') : require('../../assets/rehab-golden.png')} style={styles.cardImage} />
           <Text style={isCard2Pressed ? [styles.cardTitle, styles.cardtitlepress] : styles.cardTitle}>Rehabilitation</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={isCard3Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard3press}>
+        <TouchableOpacity style={isCard3Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard3press} onPress={() => navigation.navigate("CaseStatus")}>
         <Image source={isCard3Pressed ? require('../../assets/status.png') : require('../../assets/status-golden.png')} style={styles.cardImage} />
           <Text style={isCard3Pressed ? [styles.cardTitle, styles.cardtitlepress] : styles.cardTitle}>Status</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={isCard4Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard4press}>
+        <TouchableOpacity style={isCard4Pressed ? [styles.card, styles.cardpress] : styles.card} onPressIn={handlecard4press} onPress={() => navigation.navigate("ChatBot")}>
         <Image source={isCard4Pressed ? require('../../assets/chatbot.png') : require('../../assets/chatbot-golden.png')} style={styles.cardImage} />
           <Text style={isCard4Pressed ? [styles.cardTitle, styles.cardtitlepress] : styles.cardTitle}>Chatbot</Text>
         </TouchableOpacity>
