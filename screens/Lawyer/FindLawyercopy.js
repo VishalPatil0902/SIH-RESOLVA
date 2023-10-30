@@ -1,16 +1,16 @@
 import {View,Text, ScrollView, TextInput, TouchableOpacity, FlatList,Image} from 'react-native';
 import {AdjustmentsHorizontalIcon,BellAlertIcon,ChatBubbleOvalLeftEllipsisIcon,MapPinIcon,AcademicCapIcon,ChevronLeftIcon,HomeIcon,UserCircleIcon,} from 'react-native-heroicons/solid'
 import SearchBar from '../../components/SearchBar';
-import img from '../../Images/Lawyer.jpeg'
+// import img from '../../Images/Lawyer.jpeg'
 import TopNav from '../../components/TopNav';
 import {LinearGradient} from 'expo-linear-gradient';
-
+// require('../Images/MyLawyer.png');
 export default function FindLawyercopy( { navigation } ){
-     const data=[{name:'DARSHIT SHAH',img:'../../Images/Lawyer.jpeg',location:'Bangalore,Karnataka',experience:'8+ Years of Experience',languages:'Hindi,Tamil +2'}
-   ,{name:'PRANAV PATIL',img:'../../Images/Lawyer.jpeg',location:'Tilak Nagar,Maharashtra',experience:'1+ Years of Experience',languages:'Hindi,Marathi +2'},
-{name:'TANIYA PAUL',img:'../../Images/Lawyer.jpeg',location:'Kalyan,Maharashtra',experience:'5+ Years of Experience',languages:'Hindi,English +1'},
-{name:'PURAV SHANGVI',img:'../../Images/Lawyer.jpeg',location:'Surat,Gujarat',experience:'3+ Years of Experience',languages:'Hindi,Gujarathi '},
-{name:'MUSTAFA CHUNEKAR',img:'../../Images/Lawyer.jpeg',location:'Lucknow,UP',experience:'12+ Years of Experience',languages:'Hindi,English +2'}]
+     const data=[{name:'Darshit Shah',img:require('../../Images/Lawyer3.jpg'),location:'Bangalore,Karnataka',experience:'8+ Years of Experience',languages:'Hindi,Tamil +2'}
+   ,{name:'Prana Patil',img:require('../../Images/Lawyer1.jpg'),location:'Tilak Nagar,Maharashtra',experience:'1+ Years of Experience',languages:'Hindi,Marathi +2'},
+{name:'Taniya Paul',img:require('../../Images/Lawyer2.jpg'),location:'Kalyan,Maharashtra',experience:'5+ Years of Experience',languages:'Hindi,English +1'},
+{name:'Purav Shangvi',img:require('../../Images/Lawyer.jpeg'),location:'Surat,Gujarat',experience:'3+ Years of Experience',languages:'Hindi,Gujarathi '},
+{name:'Selena Gomez',img:require('../../Images/Lawyer5.jpeg'),location:'Lucknow,UP',experience:'12+ Years of Experience',languages:'Hindi,English +2'}]
    
 
 
@@ -55,7 +55,7 @@ export default function FindLawyercopy( { navigation } ){
                         <View className='bg-white w-[95%] h-fit mt-3 rounded-2xl mx-3 flex-col' style={{elevation:10}} key={e.name}>
                         <TouchableOpacity  onPress={() => navigation.navigate("LawyerDetails")}>
                            <View className="flex flex-row pb-2">
-                             <View><Image source={img} className="w-20 h-20 rounded-full ml-3 mt-5"/><Text className=" border border-green-400 text-center ml-5 mt-2 rounded-3xl p-1 text-green-400 font-semibold text-xs ">Available</Text></View>
+                             <View><Image source={e.img} className="w-20 h-20 rounded-full ml-3 mt-5"/><Text className=" border border-green-400 text-center ml-5 mt-2 rounded-3xl p-1 text-green-400 font-semibold text-xs ">Available</Text></View>
                                   <View className='ml-3 flex justify-start'>
                                   <Text className='text-center mb-1 font-bold text-xl mt-5 text-gray-600 flex flex-wrap'>{e.name}</Text>
                                   <View className="flex flex-row items-center ml-3 mt-1"><MapPinIcon size={15} color="#FF7754" /><Text className='text-sm ml-2 text-gray-500'>{e.location}</Text></View>

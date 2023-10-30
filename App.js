@@ -28,7 +28,9 @@ export default function App() {
            {/* <Profile/> */}
            {/* <Settings/> */}
            {/* <Help/> */}
-           <Carousel/>
+           {/* <Carousel/> */}
+           {/* <Home/> */}
+           <BottomTab/>
       </NavigationContainer>
     </SafeAreaWrapper>
   );
