@@ -22,8 +22,14 @@ const img3 = require("../../Images/rehab3.jpeg");
 const img4 = require("../../Images/rehab4.jpeg");
 const img5 = require("../../Images/rehab5.jpeg");
 
+const ngo1=require("../../Images/NGO1.jpg");
+const ngo2=require("../../Images/NGO2.jpg");
+const ngo3=require("../../Images/NOG3.jpg");
+
+
 // data
 const items = [img1, img2, img3, img4, img5];
+const ngos=[ngo1,ngo2,ngo3];
 
 // importing pages
 import SearchBar from "../../components/SearchBar";
@@ -132,7 +138,7 @@ const RehabilitationMain = ({ navigation }) => {
             showsHorizontalScrollIndicator={false}
             nestedScrollEnabled={true}
           >
-            {items.map((item, index) => {
+            {ngos.map((item, index) => {
               return (
                 <Pressable key={index}>
                   <View
