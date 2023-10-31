@@ -1,6 +1,5 @@
 import { createBottomTabNavigator ,} from '@react-navigation/bottom-tabs';
 import { HomeIcon, Cog6ToothIcon, UserCircleIcon, ChatBubbleLeftRightIcon } from 'react-native-heroicons/solid';
-import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
 import React from 'react';
 
 
@@ -9,7 +8,7 @@ import HomePageNavigation from './HomePageNavigation';
 import Profile from '../screens/Profile/Profile';
 import Help from '../screens/Help/Help';
 import Settings from '../screens/Settings/Settings';
-import ChatbotUI from '../screens/ChatBot/Chatbot';
+
 
 export default function BottomTab() {
   const Tab = createBottomTabNavigator();
@@ -92,15 +91,6 @@ export default function BottomTab() {
           headerShown: false,
         }}
       />
-
-      <Tab.Screen
-        name="Chatbot"
-        component={ChatbotUI}
-        options={{
-        tabBarButton: () => null, // This line hides the bottom tab bar
-      
-    }}
-      /> 
     
     </Tab.Navigator>
   );

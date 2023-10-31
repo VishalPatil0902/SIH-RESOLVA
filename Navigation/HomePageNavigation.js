@@ -9,7 +9,6 @@ import LawyerNavigation from '../Navigation/LawyerNavigation'
 import RehabilitationMain from '../screens/Rehabilitation/RehabilitationMain';
 import CaseStatus from '../screens/CaseStatus/CaseStatus'
 import ChatbotUI from '../screens/ChatBot/Chatbot';
-import BottomTab from './BottomTab'
 import Home from '../screens/Homepage/Home';
 import Notification from '../screens/Notification/Notification';
 

@@ -6,10 +6,10 @@ import img12 from '../../Images/translation.png';
 
 //IMAGES 
 
-import Caseimg from '../../Images/Case_Status.png';
-import Chatimg from '../../Images/ChatBot.png';
-import rehabimg from '../../Images/rehabilitation.png';
-import legalimg from '../../Images/legal-service.png';
+import Caseimg from '../../Images/home4.png';
+import Chatimg from '../../Images/home3.png';
+import rehabimg from '../../Images/home2.png';
+import legalimg from '../../Images/home1.png';
 
 const Home = ({navigation}) => {
   return (
@@ -68,7 +68,7 @@ const Home = ({navigation}) => {
                   <View className='rounded-lg mt-5 w-[45%] h-[20%] '>
                         <TouchableOpacity className="text-[#f5ddd7] rounded-md  bg-white justify-center p-1" style={{elevation:10,shadowColor:'blue'}} onPress={() => navigation.navigate("ChatBot")}>
                               <View className='w-[80%] h-[80%] mx-3 p-3'>
-                              <Image source={Chatimg} className="w-[110%] h-[100%]"/>
+                              <Image source={Chatimg} className="w-[100%] h-[100%]"/>
                               </View>
                               <Text className='text-center text-xl m-1 font-bold w-max  text-gray-500'>ChatBot</Text>
                         </TouchableOpacity>

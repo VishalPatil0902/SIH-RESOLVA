@@ -10,6 +10,7 @@ import app from '../../Images/booking.png';
 import doc from '../../Images/compliant.png';
 import law from '../../Images/lawyer4.png';
 import search from '../../Images/search1.png'
+import LawyerBanner from '../../Images/Banner4.png'
 
 const LawyerHomePage = ({navigation}) => {
   return (
@@ -29,11 +30,12 @@ const LawyerHomePage = ({navigation}) => {
             </View>
 
             
-      <LinearGradient colors={['#ff7754', 'orange']} className='mt-5 bg-black h-[18%] rounded-lg'>
-          <Text className='text-xl font-bold text-white text-center p-2'>Welcom TO Your Legal Universe</Text>
-           
-            {/* <Carousel/> */}
+      <LinearGradient colors={['#ff7754', '#ff9d22']} start={{ x: 0.1, y: 0.5 }} end={{ x: 1, y: 0.5 }} className='mt-5 h-[18%] rounded-lg w-[100%] items-center justify-center' style={{elevation:10,shadowColor:'blue'}}>
+     <Image source={LawyerBanner} className='w-[100%] h-[70%] rounded-md' />
+      {/* </View> */}
       </LinearGradient>
+
+            {/* <Carousel/> */}
 
          {/* CARDS */}
 
