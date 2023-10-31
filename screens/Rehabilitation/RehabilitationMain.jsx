@@ -51,11 +51,9 @@ const popular = [
   { img: img10, course: "Electronics" },
 ];
 const NGO = [
-  { img: img6, course: "WeCare" },
-  { img: img7, course: "LifeMatters" },
-  { img: img8, course: "EIKTS" },
-  { img: img9, course: "Margdarshak" },
-  { img: img10, course: "Kaidi" },
+  { img: ngo1, course: "WeCare" },
+  { img: ngo2, course: "LifeMatters" },
+  { img: ngo3, course: "EIKTS" },
 ];
 
 // importing pages
@@ -181,7 +179,7 @@ const RehabilitationMain = ({ navigation }) => {
             showsHorizontalScrollIndicator={false}
             nestedScrollEnabled={true}
           >
-            {ngos.map((item, index) => {
+            {NGO.map((item, index) => {
               return (
                 <Pressable key={index}>
                   <View
@@ -190,7 +188,7 @@ const RehabilitationMain = ({ navigation }) => {
                     style={{ elevation: 10 }}
                   >
                     <Image
-                      source={item}
+                      source={item.img}
                       className="rounded-[10px] w-[100%] h-[100%]"
                     />
                   </View>
