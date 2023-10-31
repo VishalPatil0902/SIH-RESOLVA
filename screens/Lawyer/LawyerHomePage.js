@@ -25,7 +25,7 @@ const LawyerHomePage = ({navigation}) => {
                         <Text className='font-bold text-lg'></Text>
                   </View>
                   <View className='rounded-lg p-1'>
-                        <BellAlertIcon color="#ff7754" size={33}/>
+                        <BellAlertIcon color="#ff7754" size={33} onPress={()=>navigation.navigate('Notification')}/>
                   </View>
             </View>
 

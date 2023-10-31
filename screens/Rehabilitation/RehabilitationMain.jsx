@@ -25,6 +25,7 @@ const img5 = require("../../Images/rehab5.jpeg");
 const ngo1=require("../../Images/NGO1.jpg");
 const ngo2=require("../../Images/NGO2.jpg");
 const ngo3=require("../../Images/NOG3.jpg");
+const ngos=[ngo1,ngo2,ngo3];
 
 
 // data
@@ -153,7 +154,7 @@ const RehabilitationMain = ({ navigation }) => {
                     style={{ elevation: 10 }}
                   >
                     <Image
-                      source={item.img}
+                      source={item}
                       className="rounded-[10px] w-[100%] h-[100%]"
                     />
                   </View>
