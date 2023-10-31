@@ -22,11 +22,16 @@ const img3 = require("../../Images/rehab3.jpeg");
 const img4 = require("../../Images/rehab4.jpeg");
 const img5 = require("../../Images/rehab5.jpeg");
 
-const ngo1=require("../../Images/NGO1.jpg");
-const ngo2=require("../../Images/NGO2.jpg");
-const ngo3=require("../../Images/NOG3.jpg");
-const ngos=[ngo1,ngo2,ngo3];
+const ngo1 = require("../../Images/NGO1.jpg");
+const ngo2 = require("../../Images/NGO2.jpg");
+const ngo3 = require("../../Images/NOG3.jpg");
+const ngos = [ngo1, ngo2, ngo3];
 
+const img6 = require("../../Images/rehab6.jpg");
+const img7 = require("../../Images/rehab7.jpg");
+const img8 = require("../../Images/rehab8.jpg");
+const img9 = require("../../Images/rehab9.jpg");
+const img10 = require("../../Images/rehab10.jpg");
 
 
 // data
@@ -37,7 +42,20 @@ const items = [
   { img: img4, course: "Carpentry" },
   { img: img5, course: "Electronics" },
 ];
-const NGO = ["WeCare", "LifeMatters", "EIKTS", "Margdarshak", "Kaidi"];
+const popular = [
+  { img: img6, course: "Maths" },
+  { img: img7, course: "Finance" },
+  { img: img8, course: "Data Science" },
+  { img: img9, course: "Carpentry" },
+  { img: img10, course: "Electronics" },
+];
+const NGO = [
+  { img: img6, course: "WeCare" },
+  { img: img7, course: "LifeMatters" },
+  { img: img8, course: "EIKTS" },
+  { img: img9, course: "Margdarshak" },
+  { img: img10, course: "Kaidi" },
+];
 
 // importing pages
 import SearchBar from "../../components/SearchBar";
@@ -115,7 +133,7 @@ const RehabilitationMain = ({ navigation }) => {
             showsHorizontalScrollIndicator={false}
             nestedScrollEnabled={true}
           >
-            {items.map((item, index) => {
+            {popular.map((item, index) => {
               return (
                 <Pressable key={index}>
                   <View
@@ -160,7 +178,7 @@ const RehabilitationMain = ({ navigation }) => {
                     />
                   </View>
                   <Text className="text-md font-bold w-[150px] mt-2">
-                    {NGO[index]}
+                    {item.course}
                   </Text>
                 </Pressable>
               );
