@@ -2,13 +2,13 @@ import { View, Text,ScrollView,TouchableOpacity } from 'react-native';
 import {MapPinIcon,ChevronLeftIcon,PhoneIcon,AcademicCapIcon,CheckCircleIcon,EnvelopeIcon,ChatBubbleLeftIcon,VideoCameraIcon} from 'react-native-heroicons/solid';
 import React from 'react';
 
-const Notification = () => {
+const Notification = ({navigation}) => {
   return (
     <ScrollView className="p-2 bg-[#EAECF9] h-[100%]" showsVerticalScrollIndicator={false}>
         <View className="p-2  h-fit">
-            {/* <View className="flex-row justify-between mt-3 ml-2">
-               <TouchableOpacity className='bg-[#FF7754] rounded-lg p-1' onPress={() => navigation.navigate("LawyerHomePage")}><ChevronLeftIcon color="white" size={30}/></TouchableOpacity>
-                </View> */}
+            <View className="flex-row justify-between mt-3 ml-2">
+               <TouchableOpacity className='bg-[#FF7754] rounded-lg p-1' onPress={() => navigation.navigate("HomePage")}><ChevronLeftIcon color="white" size={30}/></TouchableOpacity>
+                </View>
                 <View className="mt-8">
                   <Text className="text-2xl font-semibold text-[#FF7754] ml-1">Notification</Text>
                 </View>

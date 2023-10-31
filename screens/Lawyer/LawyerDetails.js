@@ -1,7 +1,7 @@
 import TopNav from "../../components/TopNav"
 import {View,Text, ScrollView, TextInput, TouchableOpacity, FlatList,Image} from 'react-native';
 import {MapPinIcon,ChevronLeftIcon,PhoneIcon,AcademicCapIcon,CheckCircleIcon,EnvelopeIcon} from 'react-native-heroicons/solid'
-import img from '../../Images/Lawyer.jpeg'
+import img from '../../Images/Lawyer3.jpg'
 import {LinearGradient} from 'expo-linear-gradient';
 
 
@@ -20,7 +20,7 @@ export default function LawyerDetails({navigation}){
             <View >
                 <View className='bg-orange-400 p-2 py-3 mt-6 justify-center flex items-center w-52 rounded-full h-52 mx-auto' style={{elevation:30,shadowColor:'black',shadowOpacity:1,shadowRadius: 1,shadowOffset:{width:-60,height:-60}}} >
                    <View className='bg-blue-500 rounded-full' style={{elevation:100,shadowColor:'black',shadowOpacity:1,shadowRadius: 1,shadowOffset:{width:-60,height:-60}}}>
-                    <Image source={img}  className="w-52 h-52 rounded-xl justify-center "></Image>
+                    <Image source={img}  className="w-80 h-52 rounded-xl justify-center "></Image>
                    </View>
                   </View>
                 {/* <View className='justify-center items-center '><View className='bg-green-500 w-24 mt-2 flex-row items-center px-1 rounded-full py-1 justify-center'><CheckCircleIcon size={20} color="white" /><Text className='text-sm ml-1 w-fit'>Available</Text></View></View> */}

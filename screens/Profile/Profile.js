@@ -1,6 +1,6 @@
 import { View, Text,Image,ScrollView } from 'react-native'
 import React from 'react'
-import img from '../../Images/Lawyer.jpeg'
+import img from '../../Images/Profile.jpg'
 import {MapPinIcon,ChevronLeftIcon,PhoneIcon,CakeIcon, CalendarIcon} from 'react-native-heroicons/solid'
 import {LinearGradient} from 'expo-linear-gradient';
 
@@ -12,7 +12,7 @@ export default function Profile() {
          </LinearGradient>
          <Image source={img}  className="w-44 h-44 rounded-full mx-auto mt-[-100px]"></Image>
       </View>
-      <Text className='my-2 text-center text-2xl font-semibold text-orange-500'>PRANAV PATIL</Text>
+      <Text className='my-2 text-center text-2xl font-semibold text-orange-500'>Rajmohandar Lal</Text>
 
       <View className='bg-white h-fit m-3 rounded-lg p-2 flex-row justify-around ' style={{elevation:5}}>
           <View className='flex-col'>

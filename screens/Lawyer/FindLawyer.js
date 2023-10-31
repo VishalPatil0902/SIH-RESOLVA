@@ -11,11 +11,11 @@ const Tab = createBottomTabNavigator();
 
 
 export default function FindLawyercopy( { navigation } ){
-     const data=[{name:'DARSHIT SHAH',img:'../../Images/Lawyer.jpeg',location:'Bangalore,Karnataka',experience:'8+ Years of Experience',languages:'Hindi,Tamil +2'}
-   ,{name:'PRANAV PATIL',img:'../../Images/Lawyer.jpeg',location:'Tilak Nagar,Maharashtra',experience:'1+ Years of Experience',languages:'Hindi,Marathi +2'},
-{name:'TANIYA PAUL',img:'../../Images/Lawyer.jpeg',location:'Kalyan,Maharashtra',experience:'5+ Years of Experience',languages:'Hindi,English +1'},
-{name:'PURAV SHANGVI',img:'../../Images/Lawyer.jpeg',location:'Surat,Gujarat',experience:'3+ Years of Experience',languages:'Hindi,Gujarathi '},
-{name:'MUSTAFA CHUNEKAR',img:'../../Images/Lawyer.jpeg',location:'Lucknow,UP',experience:'12+ Years of Experience',languages:'Hindi,English +2'}]
+     const data=[{name:'DARSHI SHAH',img:'../../Images/Lawyer1.png',location:'Bangalore,Karnataka',experience:'8+ Years of Experience',languages:'Hindi,Tamil +2'}
+   ,{name:'PRANAV PATIL',img:'../../Images/Lawyer2.png',location:'Tilak Nagar,Maharashtra',experience:'1+ Years of Experience',languages:'Hindi,Marathi +2'},
+{name:'TANIYA PAUL',img:'../../Images/Lawyer3.png',location:'Kalyan,Maharashtra',experience:'5+ Years of Experience',languages:'Hindi,English +1'},
+{name:'PURAV SHANGVI',img:'../../Images/Lawyer4.png',location:'Surat,Gujarat',experience:'3+ Years of Experience',languages:'Hindi,Gujarathi '},
+{name:'MUSTAFA CHUNEKAR',img:'../../Images/Lawyer5.png',location:'Lucknow,UP',experience:'12+ Years of Experience',languages:'Hindi,English +2'}]
    
 
 
