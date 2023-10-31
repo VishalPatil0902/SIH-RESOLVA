@@ -1,7 +1,7 @@
 import TopNav from "../../components/TopNav"
 import {View,Text, ScrollView, TextInput, TouchableOpacity, FlatList,Image} from 'react-native';
 import {MapPinIcon,ChevronLeftIcon,PhoneIcon,AcademicCapIcon,CheckCircleIcon,EnvelopeIcon} from 'react-native-heroicons/solid'
-import img from '../../Images/Lawyer3.jpg'
+import img from '../../Images/Lawyer1.jpg'
 import {LinearGradient} from 'expo-linear-gradient';
 
 
@@ -24,10 +24,9 @@ export default function LawyerDetails({navigation}){
                    </View>
                   </View>
                 {/* <View className='justify-center items-center '><View className='bg-green-500 w-24 mt-2 flex-row items-center px-1 rounded-full py-1 justify-center'><CheckCircleIcon size={20} color="white" /><Text className='text-sm ml-1 w-fit'>Available</Text></View></View> */}
-                <View className=' mt-1 items-center '><Text className='text-2xl font-semibold'>DARSHIT H.SHAH</Text></View>
+                <View className=' mt-1 items-center '><Text className='text-2xl font-semibold'>PRANAV A. Patil</Text></View>
                 <View className='bg-white mt-2 flex-row items-center px-1 rounded-lg py-1 justify-center mx-1' style={{elevation:5,shadowOffset:{width:6,height:6}}}><AcademicCapIcon size={20} color="#ff7751" /><Text className='text-sm ml-1 font-semibold text-gray-500'>8+ Years of Experience</Text><Text className='font-bold items-center justify-center mx-1'>|</Text><MapPinIcon size={18} color="#ff7754" /><Text className='text-sm text-gray-500 ml-1 font-semibold '>Mumbai,MH</Text></View>
-                <View className='bg-white mt-4 p-2 rounded-lg px-3 mx-1' style={{elevation:5,shadowOffset:{width:6,height:6},shadowRadius:50}}><Text className='text-xl font-bold text-orange-500'>ABOUT</Text><Text className='text-sm font-semibold text-gray-500'>Darshit Shah is the new King of Law.
-                It seems like Darshit Shah has claimed the throne as the new King of Law! But don't worry, his reign promises to be filled with laughter as well as justice. In fact, rumor has it that he's planning to introduce a new law that requires lawyers to wear clown wigs and oversized shoes in the courtroom to keep things light-hearted.</Text></View>
+                <View className='bg-white mt-4 p-2 rounded-lg px-3 mx-1' style={{elevation:5,shadowOffset:{width:6,height:6},shadowRadius:50}}><Text className='text-xl font-bold text-orange-500'>ABOUT</Text><Text className='text-sm font-semibold text-gray-500'>Pranav Patil has emerged as a dedicated advocate who is making a significant impact by providing assistance to those in need. His commitment to helping individuals through their legal challenges has earned him recognition as a valuable contributor to the legal profession.</Text></View>
             </View>
 
             <View className='' style={{elevation:5,shadowOffset:{width:6,height:6}}}>
