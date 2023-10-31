@@ -4,9 +4,9 @@ const { height, width } = Dimensions.get('window');
 
 const img1 = require('../Images/Banner5.png');
 const img2 = require('../Images/Banner7.png'); 
-// const img3 = require('../Images/appointment.png');
+const img3 = require('../Images/Banner3Home.png');
 
-const imageArray = [img1, img2, img1]; 
+const imageArray = [img1, img2, img3]; 
 
 export default function Carousel() {
   return (

@@ -3,6 +3,7 @@ import React from 'react'
 import Carousel from '../../components/Carousel'
 import {AdjustmentsHorizontalIcon,BellAlertIcon} from 'react-native-heroicons/solid'
 import img12 from '../../Images/translation.png';
+import {LinearGradient} from 'expo-linear-gradient';
 
 //IMAGES 
 
@@ -21,7 +22,7 @@ const Home = ({navigation}) => {
                         <TouchableOpacity onPress={()=>navigation.navigate("Notification")}><AdjustmentsHorizontalIcon color="#ff7754" size={40} /></TouchableOpacity>
                   </View>
                   <View className='rounded-lg'>
-                        <Text className='font-bold text-2xl'>E-PRISON</Text>
+                   <Text className='font-bold text-2xl text-orange-700'>E-PRISON</Text>
                   </View>
                   <View className='rounded-lg p-1'>
                   <TouchableOpacity onPress={()=>navigation.navigate("Notification")}><Image source={img12} className='w-8 h-8 mr-2'/></TouchableOpacity>

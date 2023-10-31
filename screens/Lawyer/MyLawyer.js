@@ -24,7 +24,7 @@ const MyLawyer = ({navigation}) => {
                 <View className=' mt-1 items-center '><Text className='text-2xl'>DARSHIT H.SHAH</Text></View>
                 <View className='bg-white mt-2 flex-row items-center px-1 rounded-lg py-1 justify-center' style={{elevation:5,shadowOffset:{width:6,height:6}}}><AcademicCapIcon size={20} color="#ff7751" /><Text className='text-sm ml-1 text-gray-500 font-medium'>8+ Years of Experience</Text><Text className='font-bold items-center justify-center mx-1'>|</Text><MapPinIcon size={18} color="#ff7754" /><Text className='text-sm ml-1 text-gray-500 font-medium'>Mumbai,MH</Text></View>
                 <View className='bg-white mt-4 p-2 rounded-lg px-3' style={{elevation:5,shadowOffset:{width:6,height:6},shadowRadius:50}}><Text className='text-xl font-bold text-orange-400'>ABOUT</Text><Text className='text-sm text-gray-500 font-medium'>Darshit Shah is the new King of Law.
-                It seems like Darshit Shah has claimed the throne as the new King of Law! But don't worry, his reign promises to be filled with laughter as well as justice. In fact, rumor has it that he's planning to introduce a new law that requires lawyers to wear clown wigs and oversized shoes in the courtroom to keep things light-hearted.</Text></View>
+                Darshit Shah has emerged as a dedicated advocate who is making a significant impact by providing assistance to those in need. His commitment to helping individuals through their legal challenges has earned him recognition as a valuable contributor to the legal profession.</Text></View>
             </View>
 
             <View className=' p-2' style={{elevation:5,shadowOffset:{width:6,height:6}}}>
