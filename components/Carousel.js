@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Text, FlatList, Dimensions, TouchableOpacity, Image } from 'react-native';
 const { height, width } = Dimensions.get('window');
 
-const img1 = require('../Images/banner-img3.jpg');
-const img2 = require('../Images/Banner2.png'); 
+const img1 = require('../Images/Banner5.png');
+const img2 = require('../Images/Banner7.png'); 
 // const img3 = require('../Images/appointment.png');
 
 const imageArray = [img1, img2, img1]; 
