@@ -33,6 +33,7 @@ const img8 = require("../../Images/rehab8.jpg");
 const img9 = require("../../Images/rehab9.jpg");
 const img10 = require("../../Images/rehab10.jpg");
 
+
 // data
 const items = [
   { img: img1, course: "Maths" },
