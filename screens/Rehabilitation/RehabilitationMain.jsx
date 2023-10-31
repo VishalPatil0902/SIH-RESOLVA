@@ -8,21 +8,36 @@ import {
   Pressable,
   StatusBar,
   TouchableOpacity,
+  Image,
 } from "react-native";
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
+import { ChevronLeftIcon } from "react-native-heroicons/solid";
+
+// importing images
+const img1 = require("../../Images/rehab1.jpeg");
+const img2 = require("../../Images/rehab2.jpeg");
+const img3 = require("../../Images/rehab3.jpeg");
+const img4 = require("../../Images/rehab4.jpeg");
+const img5 = require("../../Images/rehab5.jpeg");
 
 // data
-const items = ["one", "two", "three", "four", "five"];
+const items = [img1, img2, img3, img4, img5];
 
 // importing pages
 import SearchBar from "../../components/SearchBar";
 
-const RehabilitationMain = () => {
+const RehabilitationMain = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.main} className="bg-[#EAECF9]">
       <StatusBar barStyle={"dark-content"} />
       <ScrollView nestedScrollEnabled={true} className="p-4">
+        <TouchableOpacity
+          className="bg-[#FF7754] rounded-lg p-1 w-[40px]"
+          onPress={() => navigation.navigate("HomePage")}
+        >
+          <ChevronLeftIcon color="white" size={30} />
+        </TouchableOpacity>
         {/* search bar */}
         <View className="h-[100px]">
           <SearchBar />
@@ -64,8 +79,14 @@ const RehabilitationMain = () => {
                   <View
                     key={index}
                     className={`flex flex-row justify-center items-center h-[100px] w-[170px] rounded-xl border-2 border-[#FF7754] mr-4`}
+                    // style={{ backgroundImage: item }}
                   >
-                    <Text className="font-bold">{item}</Text>
+                    <Image
+                      source={item}
+                      style={{ width: "100%" }}
+                      className="rounded-[10px] "
+                    />
+                    <Text className="font-bold">{"item"}</Text>
                   </View>
                   <Text className="text-md font-bold w-[150px] ">
                     Course name
@@ -91,7 +112,7 @@ const RehabilitationMain = () => {
                     key={index}
                     className="flex flex-row justify-center items-center h-[100px] w-[170px] rounded-xl border-2 border-[#FF7754] mr-4"
                   >
-                    <Text className="font-bold">{item}</Text>
+                    <Text className="font-bold">{"item"}</Text>
                   </View>
                   <Text className="text-md font-bold w-[150px] ">
                     Course name
@@ -116,7 +137,7 @@ const RehabilitationMain = () => {
                     key={index}
                     className="flex flex-row justify-center items-center h-[100px] w-[170px] rounded-xl border-2 border-[#FF7754] mr-4"
                   >
-                    <Text className="font-bold">{item}</Text>
+                    <Text className="font-bold">{"item"}</Text>
                   </View>
                   <Text className="text-md font-bold w-[150px] ">NGO name</Text>
                 </Pressable>
