@@ -28,6 +28,7 @@ const ngo3=require("../../Images/NOG3.jpg");
 const ngos=[ngo1,ngo2,ngo3];
 
 
+
 // data
 const items = [
   { img: img1, course: "Maths" },
