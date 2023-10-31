@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { Platform } from "react-native";
 
-const HomePage = ({navigation}{ navigation }) => {
+const HomePage = ({ navigation }) => {
   const [isCard1Pressed, setcard1press] = useState(false);
   const [isCard2Pressed, setcard2press] = useState(false);
   const [isCard3Pressed, setcard3press] = useState(false);
@@ -29,14 +29,13 @@ const HomePage = ({navigation}{ navigation }) => {
   };
 
   return (
-    
     <ImageBackground
       source={require("../../assets/background2.jpg")}
       style={styles.background}
     >
       <View style={styles.container}>
         <View style={styles.navbar}>
-          <TouchableOpacity >
+          <TouchableOpacity>
             <Image
               source={require("../../assets/multilingual.png")}
               style={styles.navImage}
@@ -51,8 +50,9 @@ const HomePage = ({navigation}{ navigation }) => {
             style={
               isCard1Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard1press} onPress={() => navigation.navigate("LawyerPageNavigation")}
-            onPress={() => navigation.navigate("LegalAid")}
+            onPressIn={handlecard1press}
+            onPress={() => navigation.navigate("LawyerPageNavigation")}
+            // onPress={() => navigation.navigate("LegalAid")}
           >
             <Image
               source={
@@ -77,8 +77,9 @@ const HomePage = ({navigation}{ navigation }) => {
             style={
               isCard2Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard2press} onPress={() => navigation.navigate("Rehabilitation")}
-            onPress={() => navigation.navigate("RehabilitationMain")}
+            onPressIn={handlecard2press}
+            onPress={() => navigation.navigate("Rehabilitation")}
+            // onPress={() => navigation.navigate("RehabilitationMain")}
           >
             <Image
               source={
@@ -103,8 +104,9 @@ const HomePage = ({navigation}{ navigation }) => {
             style={
               isCard3Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard3press} onPress={() => navigation.navigate("CaseStatus")}
-            onPress={() => navigation.navigate("Status")}
+            onPressIn={handlecard3press}
+            onPress={() => navigation.navigate("CaseStatus")}
+            // onPress={() => navigation.navigate("Status")}
           >
             <Image
               source={
@@ -129,8 +131,9 @@ const HomePage = ({navigation}{ navigation }) => {
             style={
               isCard4Pressed ? [styles.card, styles.cardpress] : styles.card
             }
-            onPressIn={handlecard4press} onPress={() => navigation.navigate("ChatBot")}
-            onPress={() => navigation.navigate("ChatbotUI")}
+            onPressIn={handlecard4press}
+            onPress={() => navigation.navigate("ChatBot")}
+            // onPress={() => navigation.navigate("ChatbotUI")}
           >
             <Image
               source={
