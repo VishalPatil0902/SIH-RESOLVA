@@ -21,6 +21,12 @@ const img2 = require("../../Images/rehab2.jpeg");
 const img3 = require("../../Images/rehab3.jpeg");
 const img4 = require("../../Images/rehab4.jpeg");
 const img5 = require("../../Images/rehab5.jpeg");
+
+const ngo1 = require("../../Images/NGO1.jpg");
+const ngo2 = require("../../Images/NGO2.jpg");
+const ngo3 = require("../../Images/NOG3.jpg");
+const ngos = [ngo1, ngo2, ngo3];
+
 const img6 = require("../../Images/rehab6.jpg");
 const img7 = require("../../Images/rehab7.jpg");
 const img8 = require("../../Images/rehab8.jpg");
@@ -157,7 +163,7 @@ const RehabilitationMain = ({ navigation }) => {
             showsHorizontalScrollIndicator={false}
             nestedScrollEnabled={true}
           >
-            {NGO.map((item, index) => {
+            {ngos.map((item, index) => {
               return (
                 <Pressable key={index}>
                   <View
@@ -166,7 +172,7 @@ const RehabilitationMain = ({ navigation }) => {
                     style={{ elevation: 10 }}
                   >
                     <Image
-                      source={item.img}
+                      source={item}
                       className="rounded-[10px] w-[100%] h-[100%]"
                     />
                   </View>

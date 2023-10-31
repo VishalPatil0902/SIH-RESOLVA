@@ -9,7 +9,7 @@ import MyLawyer from '../screens/Lawyer/MyLawyer';
 import Documents from '../screens/Lawyer/Documents';
 import FindLawyercopy from '../screens/Lawyer/FindLawyercopy';
 import LawyerHomePage from '../screens/Lawyer/LawyerHomePage';
-
+import Notification from '../screens/Notification/Notification';
 
 
 const Stack = createStackNavigator();
@@ -23,6 +23,7 @@ export default function LawyerNavigation() {
             <Stack.Screen name="LawyerDetails"  component={LawyerDetails}    options={{ headerShown: false }} />
             <Stack.Screen name="Documents"      component={Documents}            options={{ headerShown: false }} />
             <Stack.Screen name="MyLawyer"       component={MyLawyer}              options={{ headerShown: false }} /> 
+            <Stack.Screen name="Notification"       component={Notification}              options={{ headerShown: false }} /> 
         </Stack.Navigator> 
   );
 }

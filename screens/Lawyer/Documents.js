@@ -8,15 +8,14 @@ import {LinearGradient} from 'expo-linear-gradient';
 const Documents = ({navigation}) => {
   return (
     <>    
-        <ScrollView className="bg-[#EAECF9]" >
+        <ScrollView className="bg-[#EAECF9] m-1" >
            <View className='h-52'>
-            
-           <LinearGradient colors={['#52e5e7', '#130cb7']} className="p-2  h-[100%] rounded-b-3xl " style={{elevation:10,shadowColor:'black'}}>
+           <LinearGradient colors={['#EAECF9', '#EAECF9']} className="p-1  h-[100%] rounded-b-3xl  " style={{elevation:0,shadowColor:'black'}}>
                    <View className="p-2  h-[100%] rounded-b-3xl " >
                    <View className="flex-row justify-between mt-3 ml-2">
                    <TouchableOpacity className='bg-[#FF7754] rounded-lg p-1' onPress={() => navigation.navigate("LawyerHomePage")}><ChevronLeftIcon color="white" size={30}/></TouchableOpacity>                     
                    </View>
-                   <LinearGradient colors={['#52e5e7', '#130cb7']} className=' w-[90%] h-[80%] mx-auto mt-12 rounded-3xl p-1' style={{elevation:20,shadowColor:'blue'}}>
+                   <LinearGradient colors={['#ff7754', 'orange']} className=' w-[90%] h-[80%] mx-auto mt-12 rounded-3xl p-1' style={{elevation:20,shadowColor:'blue'}}>
                    <View  >
                         <View className='flex-row p-2 flex-wrap justify-around w-[100%] '><View className='w-20 h-20 bg-white flex items-center justify-center rounded-full'><Image source={img} className='w-16 h-16' /></View><View><Text className='text-white text-xl my-auto  text-center font-bold'>ACCESS MANAGER</Text></View></View>
                         <View className=' my-auto '><Text className='italic font-bold text-white text-center text-base'>Manage Your Documents Access Here..</Text></View>
