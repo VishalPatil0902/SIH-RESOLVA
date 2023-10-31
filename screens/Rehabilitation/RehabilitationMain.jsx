@@ -28,8 +28,14 @@ const ngo3=require("../../Images/NOG3.jpg");
 
 
 // data
-const items = [img1, img2, img3, img4, img5];
-const ngos=[ngo1,ngo2,ngo3];
+const items = [
+  { img: img1, course: "Maths" },
+  { img: img2, course: "Finance" },
+  { img: img3, course: "Data Science" },
+  { img: img4, course: "Carpentry" },
+  { img: img5, course: "Electronics" },
+];
+const NGO = ["WeCare", "LifeMatters", "EIKTS", "Margdarshak", "Kaidi"];
 
 // importing pages
 import SearchBar from "../../components/SearchBar";
@@ -86,12 +92,12 @@ const RehabilitationMain = ({ navigation }) => {
                     style={{ elevation: 10 }}
                   >
                     <Image
-                      source={item}
+                      source={item.img}
                       className="rounded-[10px] w-[100%] h-[100%]"
                     />
                   </View>
                   <Text className="text-md font-bold w-[150px] mt-2">
-                    Course name
+                    {item.course}
                   </Text>
                 </Pressable>
               );
@@ -116,12 +122,12 @@ const RehabilitationMain = ({ navigation }) => {
                     style={{ elevation: 10 }}
                   >
                     <Image
-                      source={item}
+                      source={item.img}
                       className="rounded-[10px] w-[100%] h-[100%]"
                     />
                   </View>
                   <Text className="text-md font-bold w-[150px] mt-2">
-                    Course name
+                    {item.course}
                   </Text>
                 </Pressable>
               );
@@ -147,12 +153,12 @@ const RehabilitationMain = ({ navigation }) => {
                     style={{ elevation: 10 }}
                   >
                     <Image
-                      source={item}
+                      source={item.img}
                       className="rounded-[10px] w-[100%] h-[100%]"
                     />
                   </View>
                   <Text className="text-md font-bold w-[150px] mt-2">
-                    Course name
+                    {NGO[index]}
                   </Text>
                 </Pressable>
               );
