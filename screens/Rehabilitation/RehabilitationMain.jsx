@@ -9,10 +9,11 @@ import {
   StatusBar,
   TouchableOpacity,
   Image,
+  TextInput
 } from "react-native";
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
-import { ChevronLeftIcon } from "react-native-heroicons/solid";
+import { ChevronLeftIcon ,MagnifyingGlassIcon,FunnelIcon} from "react-native-heroicons/solid";
 
 // importing images
 const img0 = require("../../Images/rehab0.jpeg");
@@ -73,7 +74,23 @@ const RehabilitationMain = ({ navigation }) => {
         </TouchableOpacity>
         {/* search bar */}
         <View className="h-[100px]">
-          <SearchBar />
+        <View>
+      <View className="w-[100%] h-12 flex-row items-center justify-around mt-3">
+        <View className="bg-white w-[85%] h-[100%] p-1 rounded-lg mt-4 mr-2 flex-row items-center">
+          <TouchableOpacity>
+            <View className="bg-[#FF7754] p-2 rounded-lg mr-3 ml-0.5">
+              <MagnifyingGlassIcon color="white" size={20} />
+            </View>
+          </TouchableOpacity>
+          <TextInput placeholder="Search Courses... " className="w-[100%]" />
+        </View>
+        <TouchableOpacity>
+          <View className="bg-[#FF7754] p-2 mt-4 mr-2 rounded-lg">
+            <FunnelIcon color="white" size={20} />
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
         </View>
 
         {/* Featured */}
