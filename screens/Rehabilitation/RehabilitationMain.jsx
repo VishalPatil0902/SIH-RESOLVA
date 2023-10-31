@@ -15,6 +15,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import { ChevronLeftIcon } from "react-native-heroicons/solid";
 
 // importing images
+const img0 = require("../../Images/rehab0.jpeg");
 const img1 = require("../../Images/rehab1.jpeg");
 const img2 = require("../../Images/rehab2.jpeg");
 const img3 = require("../../Images/rehab3.jpeg");
@@ -46,10 +47,7 @@ const RehabilitationMain = ({ navigation }) => {
         {/* Featured */}
         <Text className="text-xl font-bold my-2">Featured</Text>
         <View className="h-[200px] w-full rounded-xl mb-5 bg-green-300 flex justify-center items-center p-4">
-          <Text>
-            This is an education feature where education promotion will be
-            entered
-          </Text>
+          <Image source={img0} className="rounded-[10px] w-[110%] h-[120%]" />
         </View>
 
         {/* main browsing content */}
@@ -78,7 +76,9 @@ const RehabilitationMain = ({ navigation }) => {
                 <Pressable key={index}>
                   <View
                     key={index}
-                    className='h-[100px] w-[170px] rounded-xl mr-4' style={{elevation:10}}>
+                    className="h-[100px] w-[170px] rounded-xl mr-4"
+                    style={{ elevation: 10 }}
+                  >
                     <Image
                       source={item}
                       className="rounded-[10px] w-[100%] h-[100%]"
@@ -106,7 +106,9 @@ const RehabilitationMain = ({ navigation }) => {
                 <Pressable key={index}>
                   <View
                     key={index}
-                    className='h-[100px] w-[170px] rounded-xl mr-4' style={{elevation:10}}>
+                    className="h-[100px] w-[170px] rounded-xl mr-4"
+                    style={{ elevation: 10 }}
+                  >
                     <Image
                       source={item}
                       className="rounded-[10px] w-[100%] h-[100%]"
@@ -135,7 +137,9 @@ const RehabilitationMain = ({ navigation }) => {
                 <Pressable key={index}>
                   <View
                     key={index}
-                    className='h-[100px] w-[170px] rounded-xl mr-4' style={{elevation:10}}>
+                    className="h-[100px] w-[170px] rounded-xl mr-4"
+                    style={{ elevation: 10 }}
+                  >
                     <Image
                       source={item}
                       className="rounded-[10px] w-[100%] h-[100%]"
