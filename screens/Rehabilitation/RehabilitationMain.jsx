@@ -31,7 +31,7 @@ const RehabilitationMain = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.main} className="bg-[#EAECF9]">
       <StatusBar barStyle={"dark-content"} />
-      <ScrollView nestedScrollEnabled={true} className="p-4">
+      <ScrollView nestedScrollEnabled={true} className="p-4 mb-16">
         <TouchableOpacity
           className="bg-[#FF7754] rounded-lg p-1 w-[40px]"
           onPress={() => navigation.navigate("HomePage")}
@@ -58,7 +58,7 @@ const RehabilitationMain = ({ navigation }) => {
         <View>
           <Text className="text-xl font-bold ">Get in Touch With us</Text>
           <View className="flex flex-row justify-start pl-4">
-            <Pressable className="flex flex-row justify-center items-center border-2 border-[#FF7754] py-4 px-2 gap-x-2 my-4 rounded-xl">
+            <Pressable className="flex flex-row justify-center items-center border-2  py-4 px-2 gap-x-2 my-4 rounded-xl">
               <Text className="font-bold">Contact Us</Text>
               <FontAwesome name="video-camera" size={24} color="#FF7754" />
             </Pressable>
@@ -78,17 +78,13 @@ const RehabilitationMain = ({ navigation }) => {
                 <Pressable key={index}>
                   <View
                     key={index}
-                    className={`flex flex-row justify-center items-center h-[100px] w-[170px] rounded-xl border-2 border-[#FF7754] mr-4`}
-                    // style={{ backgroundImage: item }}
-                  >
+                    className='h-[100px] w-[170px] rounded-xl mr-4' style={{elevation:10}}>
                     <Image
                       source={item}
-                      style={{ width: "100%" }}
-                      className="rounded-[10px] "
+                      className="rounded-[10px] w-[100%] h-[100%]"
                     />
-                    <Text className="font-bold">{"item"}</Text>
                   </View>
-                  <Text className="text-md font-bold w-[150px] ">
+                  <Text className="text-md font-bold w-[150px] mt-2">
                     Course name
                   </Text>
                 </Pressable>
@@ -110,11 +106,13 @@ const RehabilitationMain = ({ navigation }) => {
                 <Pressable key={index}>
                   <View
                     key={index}
-                    className="flex flex-row justify-center items-center h-[100px] w-[170px] rounded-xl border-2 border-[#FF7754] mr-4"
-                  >
-                    <Text className="font-bold">{"item"}</Text>
+                    className='h-[100px] w-[170px] rounded-xl mr-4' style={{elevation:10}}>
+                    <Image
+                      source={item}
+                      className="rounded-[10px] w-[100%] h-[100%]"
+                    />
                   </View>
-                  <Text className="text-md font-bold w-[150px] ">
+                  <Text className="text-md font-bold w-[150px] mt-2">
                     Course name
                   </Text>
                 </Pressable>
@@ -122,7 +120,9 @@ const RehabilitationMain = ({ navigation }) => {
             })}
           </ScrollView>
         </View>
+
         {/* NGOs */}
+
         <View className="mb-8">
           <Text className="text-xl font-bold my-2">NGO</Text>
           <ScrollView
@@ -135,11 +135,15 @@ const RehabilitationMain = ({ navigation }) => {
                 <Pressable key={index}>
                   <View
                     key={index}
-                    className="flex flex-row justify-center items-center h-[100px] w-[170px] rounded-xl border-2 border-[#FF7754] mr-4"
-                  >
-                    <Text className="font-bold">{"item"}</Text>
+                    className='h-[100px] w-[170px] rounded-xl mr-4' style={{elevation:10}}>
+                    <Image
+                      source={item}
+                      className="rounded-[10px] w-[100%] h-[100%]"
+                    />
                   </View>
-                  <Text className="text-md font-bold w-[150px] ">NGO name</Text>
+                  <Text className="text-md font-bold w-[150px] mt-2">
+                    Course name
+                  </Text>
                 </Pressable>
               );
             })}
