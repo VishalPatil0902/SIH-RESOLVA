@@ -1,57 +1,49 @@
-###
 
-Undertrial Prisoners Assistance App
-A React Native mobile application designed to assist undertrial prisoners in India by providing legal aid, rehabilitation services, and real-time monitoring. The app aims to enhance access to justice and ensure better rehabilitation outcomes for undertrial prisoners.
 
-Problem Statement
+# **ePrison: Undertrial Prisoners Assistance App**
+
+A **React Native** mobile application designed to assist undertrial prisoners in India by providing **legal aid**, **rehabilitation services**, and **real-time monitoring**. The app aims to enhance **access to justice** and ensure better rehabilitation outcomes for undertrial prisoners.
+
+---
+
+## **Problem Statement**
+
 The app addresses the challenges faced by undertrial prisoners in India, including:
 
-Legal Aid: Providing legal representation, access to court proceedings, and legal resources.
-Lawyer Connections: Connecting prisoners with pro bono lawyers, legal clinics, and organizations like UTRCS for the bail process.
-Rehabilitation: Offering technology-based education, vocational training, and mental health support.
-Monitoring: A dashboard to track the status of prisoners, accessible by lawyers, judges, and authorities.
-Awareness: A virtual platform to improve awareness of prisoners' rights and legal provisions.
+- **Legal Aid**: Providing legal representation, access to court proceedings, and legal resources.
+- **Lawyer Connections**: Connecting prisoners with pro bono lawyers, legal clinics, and organizations like UTRCS for the bail process.
+- **Rehabilitation**: Offering technology-based education, vocational training, and mental health support.
+- **Monitoring**: A dashboard to track the status of prisoners, accessible by lawyers, judges, and authorities.
+- **Awareness**: A virtual platform to improve awareness of prisoners' rights and legal provisions.
 
-Key Features
-Legal Aid: Mobile app providing access to legal representation and resources.
-Pro Bono Lawyer Connections: Platform to connect prisoners with legal help.
-Rehabilitation Support: Programs for education, vocational training, and mental health.
-Status Monitoring: Dashboard tracking the progress of undertrial prisoners.
-Rights Awareness: Virtual resources to inform undertrial prisoners about their rights.
+---
 
-Deliverables
-Functional Prototype: A working solution addressing the needs of undertrial prisoners.
-Business Plan: Outlining the feasibility, scalability, and sustainability of the solution.
-Pitch Deck: Communicating the problem, solution, and impact.
+## **Key Features**
 
-Expected Impact
-Increased Legal Aid Access: Fairer criminal justice for undertrial prisoners.
-Improved Rehabilitation: Lower recidivism rates and better social reintegration.
-Increased Transparency: Reducing the number of undertrial prisoners in jail.
-Legal-Tech Collaboration: Innovative solutions for justice.
+- **Legal Aid**: Mobile app providing access to legal representation and resources.
+- **Pro Bono Lawyer Connections**: Platform to connect prisoners with legal help.
+- **Rehabilitation Support**: Programs for education, vocational training, and mental health.
+- **Status Monitoring**: Dashboard tracking the progress of undertrial prisoners.
+- **Rights Awareness**: Virtual resources to inform undertrial prisoners about their rights.
 
-Installation
-Clone the repository:
+---
 
-bash
-Copy code
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
-Install dependencies:
+## **Deliverables**
 
-bash
-Copy code
-npm install
-Start the app:
+1. **Functional Prototype**: A working solution addressing the needs of undertrial prisoners.
+2. **Business Plan**: Outlining the feasibility, scalability, and sustainability of the solution.
+3. **Pitch Deck**: Communicating the problem, solution, and impact.
 
-bash
-Copy code
-npm start
-Usage
-To find a lawyer, navigate to the Find Lawyer section.
-To access court proceedings, visit the Court Access page.
-For rehabilitation support, go to Rehabilitation Programs.
-Track the progress of prisoners using the Dashboard.
+---
+
+## **Expected Impact**
+
+- **Increased Legal Aid Access**: Fairer criminal justice for undertrial prisoners.
+- **Improved Rehabilitation**: Lower recidivism rates and better social reintegration.
+- **Increased Transparency**: Reducing the number of undertrial prisoners in jail.
+- **Legal-Tech Collaboration**: Innovative solutions for justice.
+
+---
 
 Screenshots
 
